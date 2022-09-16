@@ -268,7 +268,7 @@ function ThemeSelection() {
         </div>
         <div className="theme-cards">
           {popPremCard.map((item) => (
-            <ThemeCard
+            <PremiumCard
               key={uuidv4()}
               header={item.title}
               description={item.subtitle}
