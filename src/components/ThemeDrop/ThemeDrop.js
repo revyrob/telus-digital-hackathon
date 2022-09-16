@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Box from "../Box/Box";
+import MovieTheme from "../MovieTheme/MovieTheme";
+import SportsTheme from "../SportsTheme/SportsTheme";
 
 export default function ThemeDrop() {
   const [isShown, setIsShown] = useState(false);
@@ -15,7 +16,7 @@ export default function ThemeDrop() {
       <button onClick={showInfo}>Entertainment</button>
       <button onClick={showInfo}>Family Kids</button>
 
-      {isShown && <Box />}
+      {isShown && <SportsTheme />}
     </section>
   );
 }
