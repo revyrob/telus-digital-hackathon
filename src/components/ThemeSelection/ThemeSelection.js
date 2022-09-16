@@ -57,69 +57,65 @@ function ThemeSelection() {
             </div>
             <section className="dive-deeper-categories">
                 <p className="categories__p--purple">Or dive deeper</p>
-                <button
-                    onClick={() => showInfo("most-popular")}
-                    className="categories__button categories__button--active"
-                >
-                    Most Popular
-                </button>
-                <button onClick={() => showInfo("movies")} className="categories__button">
-                    Movies & Series
-                </button>
-                <button onClick={() => showInfo("sports")} className="categories__button">
-                    Sports & Outdoors
-                </button>
-                <button
-                    onClick={() => showInfo("entertainment")}
-                    className="categories__button"
-                >
-                    Entertainment
-                </button>
-                <button onClick={() => showInfo("family")} className="categories__button">
-                    Family & Kids
-                </button>
-                <button
-                    onClick={() => showInfo("education")}
-                    className="categories__button"
-                >
-                    Education & Documentary
-                </button>
-                <button onClick={() => showInfo("news")} className="categories__button">
-                    News
-                </button>
-                <button
-                    onClick={() => showInfo("south-asian")}
-                    className="categories__button"
-                >
-                    South Asian
-                </button>
-                <button
-                    onClick={() => showInfo("chinese")}
-                    className="categories__button"
-                >
-                    Chinese
-                </button>
-                <button onClick={() => showInfo("french")} className="categories__button">
-                    French
-                </button>
-                <button
-                    onClick={() => showInfo("filipino")}
-                    className="categories__button"
-                >
-                    Filipino
-                </button>
-                <button
-                    onClick={() => showInfo("international")}
-                    className="categories__button"
-                >
-                    International
-                </button>
-                <button
-                    onClick={() => showInfo("talk-show")}
-                    className="categories__button"
-                >
-                    Talk Show & Variety
-                </button>
+                <div className="categories__button-area">
+                    <button onClick={() => showInfo("movies")} className="categories__button">
+                        Movies & Series
+                    </button>
+                    <button onClick={() => showInfo("sports")} className="categories__button">
+                        Sports & Outdoors
+                    </button>
+                    <button
+                        onClick={() => showInfo("entertainment")}
+                        className="categories__button"
+                    >
+                        Entertainment
+                    </button>
+                    <button onClick={() => showInfo("family")} className="categories__button">
+                        Family & Kids
+                    </button>
+                    <button
+                        onClick={() => showInfo("education")}
+                        className="categories__button"
+                    >
+                        Education & Documentary
+                    </button>
+                    <button onClick={() => showInfo("news")} className="categories__button">
+                        News
+                    </button>
+                    <button
+                        onClick={() => showInfo("south-asian")}
+                        className="categories__button"
+                    >
+                        South Asian
+                    </button>
+                    <button
+                        onClick={() => showInfo("chinese")}
+                        className="categories__button"
+                    >
+                        Chinese
+                    </button>
+                    <button onClick={() => showInfo("french")} className="categories__button">
+                        French
+                    </button>
+                    <button
+                        onClick={() => showInfo("filipino")}
+                        className="categories__button"
+                    >
+                        Filipino
+                    </button>
+                    <button
+                        onClick={() => showInfo("international")}
+                        className="categories__button"
+                    >
+                        International
+                    </button>
+                    <button
+                        onClick={() => showInfo("talk-show")}
+                        className="categories__button"
+                    >
+                        Talk Show & Variety
+                    </button>
+                </div>
             </section>
 
 
