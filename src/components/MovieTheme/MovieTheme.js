@@ -6,7 +6,7 @@ function MovieTheme() {
       <img className="box--img" src={TSN} alt="tsn 1 logo" />
       <img className="box--img" src={TSN} alt="tsn 1 logo" />
       <img className="box--img" src={TSN} alt="tsn 1 logo" />
-      <p>Add to cart</p>
+      <button>Add to cart</button>
     </div>
   );
 }

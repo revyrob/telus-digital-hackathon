@@ -3,14 +3,21 @@ import { act } from "react-dom/test-utils";
 import ThemeCard from "../ThemeCard/ThemeCard";
 import "./ThemeSelection.scss";
 import primeTime from '../../assets/cardImages/primeTime.png';
+import { motion } from "framer-motion";
 
 function ThemeSelection() {
-    const [activeTheme, setActiveTheme] = useState(null);
+  const [activeTheme, setActiveTheme] = useState(null);
+  const [cart, setCart] = useState(0);
 
     function showInfo(category) {
         console.log(category);
         setActiveTheme(category);
     }
+
+  function seletedBox(theme) {
+    console.log(theme);
+    setCart(theme);
+  }
 
 
     return (
@@ -95,6 +102,7 @@ function ThemeSelection() {
                 }
         </section>
     )
+
 }
 
 export default ThemeSelection;
