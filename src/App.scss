@@ -5,6 +5,10 @@ body {
   font-family: $font-primary, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .box {
   display: flex;
   flex-direction: column;
