@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import ThemeCard from "../ThemeCard/ThemeCard";
 import "./ThemeSelection.scss";
+import { motion } from "framer-motion";
+
 import primeTime from "../../assets/cardImages/primeTime.png";
 import popTheme from "../../assets/data/mostPopTheme.json";
 import popPrem from "../../assets/data/mostPopPremium.json";
@@ -186,6 +188,7 @@ function ThemeSelection() {
           Talk Show & Variety
         </button>
       </div>
+
       <div className="underButtons">
         {activeTheme === "most-popular" && (
           <div className="categories__cards">
@@ -264,17 +267,16 @@ function ThemeSelection() {
           <p className="categories__p">Most popular premiums</p>
         </div>
         <div className="theme-cards">
-        {popPremCard.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {popPremCard.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="premiumPacks">
@@ -282,17 +284,16 @@ function ThemeSelection() {
           <p className="categories__p">Premium Packs</p>
         </div>
         <div className="theme-cards">
-        {premPackCard.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {premPackCard.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="indChan">
@@ -300,15 +301,15 @@ function ThemeSelection() {
           <p className="categories__p">Individual Channels</p>
         </div>
         <div className="theme-cards">
-        {indChan.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {indChan.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
       </section>
 

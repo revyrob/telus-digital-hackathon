@@ -3,6 +3,7 @@ import ThemeSelection from "./components/ThemeSelection/ThemeSelection";
 import Header from "./components/Header/Header";
 import PackageSelector from "./components/PackageSelector/PackageSelector";
 import Popup from "./components/Popup/Popup";
+import ThemeDrop from "./components/ThemeDrop/ThemeDrop";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <PackageSelector />
       <ThemeSelection />
-      <Popup />
+      {/* <Popup />
+      <ThemeDrop /> */}
     </div>
   );
 }
