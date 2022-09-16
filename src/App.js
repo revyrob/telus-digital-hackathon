@@ -1,16 +1,9 @@
-import './App.scss';
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ThemeDrop from "./components/ThemeDrop/ThemeDrop";
 
 function App() {
-  return (
-    <BrowserRouter>
-    <Routes>
-      <Route>
-        
-      </Route>
-    </Routes>
-    </BrowserRouter>
-  );
+  return <ThemeDrop />;
 }
 
 export default App;
