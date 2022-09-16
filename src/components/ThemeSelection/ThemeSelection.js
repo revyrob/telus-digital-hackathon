@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { act } from 'react-dom/test-utils';
-import './ThemeSelection.scss';
+import { useState } from "react";
+import { act } from "react-dom/test-utils";
+import "./ThemeSelection.scss";
 
 function ThemeSelection() {
+  const [activeTheme, setActiveTheme] = useState(null);
 
-    const [activeTheme, setActiveTheme] = useState(null);
+  function showInfo(category) {
+    console.log(category);
+    setActiveTheme(category);
+  }
 
-    function showInfo(category) {
-        console.log(category);
-        setActiveTheme(category);
-    }
 
     return (
         <section className='categories'>

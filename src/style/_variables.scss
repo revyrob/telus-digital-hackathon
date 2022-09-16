@@ -1,5 +1,8 @@
+@use './typography' as *;
+
+
 // fonts
-$font-primary: 'Helvetica Now', 'sans serif';
+$font-primary: 'Helvetica Now Text  Regular', Helvetica, sans-serif;
 
 // primary colors
 $telus-purple: #4B286D;
