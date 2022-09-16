@@ -9,8 +9,7 @@ function App() {
   return (
     <>
       <DummyHeader />
-      <p>hello is the font working</p>
-      return <ThemeDrop />
+      <ThemeDrop />
     </>
   );
 

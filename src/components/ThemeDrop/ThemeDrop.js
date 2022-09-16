@@ -29,74 +29,71 @@ function ThemeSelection() {
   }
 
   return (
-    <section className="categories">
-      <div>
+    <section className="themeDrop">
+      {/* <div>
         <p>Here is the counter for the shopping cart</p>
         <p>{cart}</p>
-      </div>
+      </div> */}
 
-      <h2>Explore Categories</h2>
-      <div className="btn">
-        <button className="categories__btn" onClick={() => showInfo("movie")}>
+      <h2 className="themeDrop__title">Explore Categories</h2>
+      <div className="themeDrop__wrapper">
+        <button className="themeDrop__btn" onClick={() => showInfo("movie")}>
           Movies &amp Series
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("sports")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("sports")}>
           Sports &amp Outdoors
         </button>
 
         <button
-          className="categories__btn"
+          className="themeDrop__btn"
           onClick={() => showInfo("entertainment")}
         >
           Entertainment
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("kids")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("kids")}>
           Family Kids
         </button>
 
         <button
-          className="categories__btn"
+          className="themeDrop__btn"
           onClick={() => showInfo("education")}
         >
           Education &amp Documentary
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("news")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("news")}>
           News
         </button>
 
         <button
-          className="categories__btn"
+          className="themeDrop__btn"
           onClick={() => showInfo("south africa")}
         >
           South Africa
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("chinese")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("chinese")}>
           Chinese
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("french")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("french")}>
           French
         </button>
 
-        <button
-          className="categories__btn"
-          onClick={() => showInfo("filipino")}
-        >
+        <button className="themeDrop__btn" onClick={() => showInfo("filipino")}>
           Filipino
         </button>
 
         <button
-          className="categories__btn"
+          className="themeDrop__btn"
           onClick={() => showInfo("international")}
         >
           International
         </button>
 
-        <button className="categories__btn" onClick={() => showInfo("variety")}>
+        <button className="themeDrop__btn" onClick={() => showInfo("variety")}>
           Talk Show &amp Variety
         </button>
       </div>
