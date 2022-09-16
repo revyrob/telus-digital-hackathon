@@ -9,6 +9,8 @@ import PremiumCard from "../PremiumCard/PremiumCard";
 import netflixImage from '../../assets/premiumPopularImages/netflix.png';
 import ChannelsCard from "../ChannelsCard/ChannelsCard";
 import netflixImage2 from '../../assets/PremiumChannelsImages/netflix.png';
+import checkmarks from '../../assets/summary-check.svg';
+import hippo from '../../assets/hippo.png';
 
 function ThemeSelection() {
     const [activeTheme, setActiveTheme] = useState(null);
@@ -194,7 +196,57 @@ function ThemeSelection() {
                     <div className='family__card'>Family card 3</div>
                 </>
             }
+
+            <section className="checkout">
+                <div className="categories__header">
+                <h2 className="categories__title">
+                    <div className="numberCircled">5</div>Seal the deal
+                </h2>
+                </div>
+                <div className="checkout__card-wrapper">
+                    <div className="checkout__card">
+                        <div className="checkout__text">
+                            <h3 className="checkout__header">Package Type</h3>
+                            <h4 className="checkout__subheader">All Your Favorites Package</h4>
+                            <h3 className="checkout__header">Themes</h3>
+                                <p className="checkout__theme">
+                                    <img className="checkout__checkmark" src={checkmarks} alt='checkmark'/>
+                                    Laughs and Cheers
+                                </p>
+                                <p className="checkout__theme">
+                                    <img className="checkout__checkmark" src={checkmarks} alt='checkmark'/>
+                                    Primetime
+                                </p>
+                                <p className="checkout__theme">
+                                    <img className="checkout__checkmark" src={checkmarks} alt='checkmark'/>
+                                    Explore
+                                </p>
+                                <p className="checkout__theme">
+                                    <img className="checkout__checkmark" src={checkmarks} alt='checkmark'/>
+                                    Living
+                                </p>
+                            <h3 className="checkout__header">Premium</h3>
+                                <p className="checkout__theme">
+                                    <img className="checkout__checkmark" src={checkmarks} alt='checkmark'/>
+                                    Crave
+                                </p>
+                            <div className="checkout__buttons">
+                                <button className="checkout__button checkout__button--clear">Clear all</button>
+                                <button className="checkout__button checkout__button--complete">Complete Bundle</button>
+                            </div>
+                        </div>
+                        <div className="checkout__image">
+                            <img className="checkout__image-img" src={hippo} alt='hippo image'/> 
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
         </section>
+
     )
 
 }
