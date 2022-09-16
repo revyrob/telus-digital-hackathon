@@ -30,26 +30,30 @@ function ThemeSelection() {
   const [diveDeepCard3] = useState(diveDeep3);
 
   function showInfo(category) {
-    console.log(category);
-    setActiveTheme(category);
+    // console.log(category);
+    setActiveTheme((prevCategory) => {
+      if (prevCategory === category) {
+        return "";
+      }
+      return category;
+    });
   }
 
   function seletedBox(theme) {
     // setThemes(theme);
     //change classname to show selected item
     setCart(cart + 1);
-    console.log(cart);
+    // console.log(cart);
     if (cart > 3) {
       alert("Upgrade so you can choose all the channels you want.");
     }
   }
 
-  useEffect(() => {
-    console.log();
-  }, []);
+  // useEffect(() => {
+  //   console.log(activeTheme);
+  // }, [activeTheme]);
 
   function seletedBox(theme) {
-    console.log(theme);
     setCart(theme);
   }
   // function seletedBox(theme) {
@@ -87,70 +91,97 @@ function ThemeSelection() {
       <div>
         <button
           onClick={() => showInfo("movies")}
-          className="categories__button categories__button--active"
+          className={`categories__button ${
+            activeTheme === "movies" && "categories__button--active"
+          } `}
         >
           Movies & Series
         </button>
         <button
           onClick={() => showInfo("sports")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "sports" && "categories__button--active"
+          } `}
         >
           Sports & Outdoors
         </button>
         <button
           onClick={() => showInfo("entertainment")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "entertainment" && "categories__button--active"
+          } `}
         >
           Entertainment
         </button>
         <button
           onClick={() => showInfo("family")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "family" && "categories__button--active"
+          } `}
         >
           Family & Kids
         </button>
         <button
           onClick={() => showInfo("education")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "education" && "categories__button--active"
+          } `}
         >
           Education & Documentary
         </button>
-        <button onClick={() => showInfo("news")} className="categories__button">
+        <button
+          onClick={() => showInfo("news")}
+          className={`categories__button ${
+            activeTheme === "news" && "categories__button--active"
+          } `}
+        >
           News
         </button>
         <button
           onClick={() => showInfo("south-asian")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "south-asian" && "categories__button--active"
+          } `}
         >
           South Asian
         </button>
         <button
           onClick={() => showInfo("chinese")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "chinese" && "categories__button--active"
+          } `}
         >
           Chinese
         </button>
         <button
           onClick={() => showInfo("french")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "french" && "categories__button--active"
+          } `}
         >
           French
         </button>
         <button
           onClick={() => showInfo("filipino")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "filipino" && "categories__button--active"
+          } `}
         >
           Filipino
         </button>
         <button
           onClick={() => showInfo("international")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "international" && "categories__button--active"
+          } `}
         >
           International
         </button>
         <button
           onClick={() => showInfo("talk-show")}
-          className="categories__button"
+          className={`categories__button ${
+            activeTheme === "talk-show" && "categories__button--active"
+          } `}
         >
           Talk Show & Variety
         </button>
