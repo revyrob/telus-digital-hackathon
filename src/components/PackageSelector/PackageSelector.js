@@ -12,7 +12,7 @@ function PackageSelector() {
             <p className="packageSelector__p"> Package type</p>
             <h2 className="packageSelector__h2">All your favourites</h2>
           </div>
-          <h3 className="packageSelector__h3">4 themes, 1 premium</h3>
+          <h3 className="packageSelector__h3">4 themes + 1 premium</h3>
         </div>
       </section>
     </>

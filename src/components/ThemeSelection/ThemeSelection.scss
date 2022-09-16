@@ -39,7 +39,9 @@
         }
     }
     &__cards {
+        width: 100%;
         display: flex;
+        flex-wrap: wrap;
         margin: 2rem 0 3rem;
         justify-content: space-between;
     }
@@ -58,6 +60,7 @@
 }
 .bold {
     margin-left: .5rem;
+    margin-right: .5rem;
     font-weight: 700;
     color: $telus-purple;
 }
