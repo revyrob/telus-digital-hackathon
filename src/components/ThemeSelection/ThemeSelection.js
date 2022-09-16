@@ -59,9 +59,8 @@ function ThemeSelection() {
             } */}
 
             <ThemeCard 
-                theme={'blah'}
-                header={'most-popular'}
-                description={'i am so popular'}
+                header={'Prime Time'}
+                description={' Hit series to critically-acclaimed original movies and drama'}
                 image={primeTime}
             />
         
