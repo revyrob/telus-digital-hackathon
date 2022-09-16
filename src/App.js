@@ -4,18 +4,19 @@ import ThemeDrop from "./components/ThemeDrop/ThemeDrop";
 import ThemeSelection from "./components/ThemeSelection/ThemeSelection";
 import Categories from "./components/Categories/Categories";
 import DummyHeader from "./components/DummyHeader/DummyHeader";
+import Header from "./components/Header/Header";
 
 function App() {
+
   return (
-    <>
-      <DummyHeader />
-      <ThemeDrop />
-    </>
+
+    <div className="App">
+      <Header />
+      <ThemeSelection />
+    </div>
+
   );
 
-  // return <ThemeDrop />;
-  return <ThemeSelection />;
-  return <ThemeDrop />;
 }
 
 export default App;

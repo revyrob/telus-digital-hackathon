@@ -17,115 +17,61 @@ function ThemeSelection() {
     setCart(theme);
   }
 
-  return (
-    <section className="categories">
-      <button onClick={() => showInfo("movie")}>Movies Series</button>
-      <button onClick={() => showInfo("sports")}>Sports Outdoors</button>
-      <button onClick={() => showInfo("entertainment")}>Entertainment</button>
-      <button onClick={() => showInfo("kids")}>Family Kids</button>
 
-      {activeTheme !== "movie" ? (
-        <></>
-      ) : (
-        <motion.article
-          className="box__wrapper"
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            default: {
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-            },
-            scale: {
-              type: "spring",
-              damping: 7,
-              stiffness: 50,
-              restDelta: 0.001,
-            },
-          }}
-        >
-          <div className="movie__box">Movies box 1</div>
-          <div className="movie__box">Movies box 2</div>
-          <div className="movie__box">Movies box 3</div>
-        </motion.article>
-      )}
-      {activeTheme !== "sports" ? (
-        <></>
-      ) : (
-        <motion.article
-          className="box__wrapper"
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            default: {
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-            },
-            scale: {
-              type: "spring",
-              damping: 7,
-              stiffness: 50,
-              restDelta: 0.001,
-            },
-          }}
-        >
-          <div className="sports__box">Sports box 1</div>
-          <div className="sports__box">Sports box 2</div>
-          <div className="sports__box">Sports box 3</div>
-        </motion.article>
-      )}
-      {activeTheme !== "entertainment" ? (
-        <></>
-      ) : (
-        <motion.article
-          className="box__wrapper"
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            default: {
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-            },
-            scale: {
-              type: "spring",
-              damping: 7,
-              stiffness: 50,
-              restDelta: 0.001,
-            },
-          }}
-        >
-          <div className="entertainment__box">Entertainment box 1</div>
-          <div className="entertainment__box">Entertainment box 2</div>
-          <div className="entertainment__box">Entertainment box 3</div>
-        </motion.article>
-      )}
-      {activeTheme !== "kids" ? (
-        <></>
-      ) : (
-        <motion.article
-          className="box__wrapper"
-          initial={{ opacity: 0, scale: 0.7 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            default: {
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-            },
-            scale: {
-              type: "spring",
-              damping: 7,
-              stiffness: 50,
-              restDelta: 0.001,
-            },
-          }}
-        >
-          <div className="kids__box">Kids box 1</div>
-          <div className="kids__box">Kids box 2</div>
-          <div className="kids__box">Kids box 3</div>
-        </motion.article>
-      )}
-    </section>
-  );
+    return (
+        <section className='categories'>
+            <button onClick={() => showInfo('most-popular')} className='categories__button categories__button--active'>Most Popular</button>
+            <button onClick={() => showInfo('movies')} className='categories__button'>Movies & Series</button>
+            <button onClick={() => showInfo('sports')} className='categories__button'>Sports & Outdoors</button>
+            <button onClick={() => showInfo('entertainment')} className='categories__button'>Entertainment</button>
+            <button onClick={() => showInfo('family')} className='categories__button'>Family & Kids</button>
+            <button onClick={() => showInfo('education')} className='categories__button'>Education & Documentary</button>
+            <button onClick={() => showInfo('news')} className='categories__button'>News</button>
+            <button onClick={() => showInfo('south-asian')} className='categories__button'>South Asian</button>
+            <button onClick={() => showInfo('chinese')} className='categories__button'>Chinese</button>
+            <button onClick={() => showInfo('frech')} className='categories__button'>French</button>
+            <button onClick={() => showInfo('filipino')} className='categories__button'>Filipino</button>
+            <button onClick={() => showInfo('international')} className='categories__button'>International</button>
+            <button onClick={() => showInfo('talk-show')} className='categories__button'>Talk Show & Variety</button>
+
+            {(activeTheme !== 'most-popular') ? <></> :
+                <>
+                    <div className='most-popular__card'>Most Popular card 1</div>
+                    <div className='most-popular__card'>Most Popular card 2</div>
+                    <div className='most-popular__card'>Most Popular card 3</div>
+                </>
+            }
+            {(activeTheme !== 'movies') ? <></> :
+                <>
+                    <div className='movies__card'>Movies card 1</div>
+                    <div className='movies__card'>Movies card 2</div>
+                    <div className='movies__card'>Movies card 3</div>
+                </>
+            }
+            {(activeTheme !== 'sports') ? <></> :
+                <>
+                    <div className='sports__card'>Sports card 1</div>
+                    <div className='sports__card'>Sports card 2</div>
+                    <div className='sports__card'>Sports card 3</div>
+                </>
+            }
+            {(activeTheme !== 'entertainment') ? <></> :
+                <>
+                    <div className='entertainment__card'>Entertainment card 1</div>
+                    <div className='entertainment__card'>Entertainment card 2</div>
+                    <div className='entertainment__card'>Entertainment card 3</div>
+                </>
+            }
+            {(activeTheme !== 'family') ? <></> :
+                <>
+                    <div className='family__card'>Family card 1</div>
+                    <div className='family__card'>Family card 2</div>
+                    <div className='family__card'>Family card 3</div>
+                </>
+            }
+        </section>
+    )
+
 }
 
 export default ThemeSelection;
