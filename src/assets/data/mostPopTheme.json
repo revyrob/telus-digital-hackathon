@@ -3,24 +3,24 @@
         "id": "84e96018-4022-434e-80bf-000ce4cd12b8",
         "title": "Prime Time",
         "subtitle": "For original drama",
-        "image": "./imagesMain/prime-time.png"
+        "image": "mostPopTheme/prime-time.png"
     },
     {
         "id": "c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
         "title": "Living",
         "subtitle": "For food and DYI lovers",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg"
+        "image": "mostPopTheme/Living.png"
     },
     {
         "id": "25ce5d91-a262-4dcf-bb87-42b87546bcfa",
         "title": "Sportsnet and Beyond",
         "subtitle": "For sports fans",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg"
+        "image": "mostPopTheme/sportnets-beyond.png"
     },
     {
         "id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7",
         "title": "Laughs and Cheers",
         "subtitle": "For comedy fans",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg"
+        "image": "mostPopTheme/laughs-cheers.png"
     }
 ]
