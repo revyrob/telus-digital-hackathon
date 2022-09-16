@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import ThemeCard from "../ThemeCard/ThemeCard";
+import { motion } from "framer-motion";
+
 import "./ThemeSelection.scss";
 import primeTime from "../../assets/cardImages/primeTime.png";
 import popTheme from "../../assets/data/mostPopTheme.json";
@@ -188,17 +190,35 @@ function ThemeSelection() {
       </div>
       <div className="underButtons">
         {activeTheme === "most-popular" && (
-          <div className="categories__cards">
-            {diveDeepCard.map((item) => (
-              <ThemeCard
-                key={uuidv4()}
-                header={item.title}
-                description={item.subtitle}
-                image={item.image}
-                onclickEvent={seletedBox}
-              />
-            ))}
-          </div>
+          <motion.article
+            className="box__wrapper"
+            initial={{ opacity: 0, scale: 0.7 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              default: {
+                duration: 0.3,
+                ease: [0, 0.71, 0.2, 1.01],
+              },
+              scale: {
+                type: "spring",
+                damping: 7,
+                stiffness: 50,
+                restDelta: 0.001,
+              },
+            }}
+          >
+            <div className="categories__cards">
+              {diveDeepCard.map((item) => (
+                <ThemeCard
+                  key={uuidv4()}
+                  header={item.title}
+                  description={item.subtitle}
+                  image={item.image}
+                  onclickEvent={seletedBox}
+                />
+              ))}
+            </div>
+          </motion.article>
         )}
         {activeTheme === "movies" && (
           <div className="categories__cards">
@@ -264,17 +284,16 @@ function ThemeSelection() {
           <p className="categories__p">Most popular premiums</p>
         </div>
         <div className="theme-cards">
-        {popPremCard.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {popPremCard.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="premiumPacks">
@@ -282,17 +301,16 @@ function ThemeSelection() {
           <p className="categories__p">Premium Packs</p>
         </div>
         <div className="theme-cards">
-        {premPackCard.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {premPackCard.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
-
       </section>
 
       <section className="indChan">
@@ -300,15 +318,15 @@ function ThemeSelection() {
           <p className="categories__p">Individual Channels</p>
         </div>
         <div className="theme-cards">
-        {indChan.map((item) => (
-          <ThemeCard
-            key={uuidv4()}
-            header={item.title}
-            description={item.subtitle}
-            image={item.image}
-            onclickEvent={seletedBox}
-          />
-        ))}
+          {indChan.map((item) => (
+            <ThemeCard
+              key={uuidv4()}
+              header={item.title}
+              description={item.subtitle}
+              image={item.image}
+              onclickEvent={seletedBox}
+            />
+          ))}
         </div>
       </section>
 
