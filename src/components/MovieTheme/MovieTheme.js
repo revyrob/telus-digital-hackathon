@@ -1,6 +1,6 @@
 import TSN from "../../assets//showIcons/TSN1.png";
 
-function Box() {
+function MovieTheme() {
   return (
     <div className="box">
       <img className="box--img" src={TSN} alt="tsn 1 logo" />
@@ -10,4 +10,4 @@ function Box() {
     </div>
   );
 }
-export default Box;
+export default MovieTheme;

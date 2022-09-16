@@ -1,8 +1,10 @@
 @use './style/variables' as *;
-// @use './style/typography' as *;
+@use './style/typography' as *;
 
 body {
-  font-family: $font-primary, sans-serif;
+  font-family: $font-primary, Helvetica, sans-serif;
+  
+  font-size: 20px;
 }
 
 .box {
@@ -22,3 +24,4 @@ body {
     
   }
 }
+

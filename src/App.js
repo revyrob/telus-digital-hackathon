@@ -4,19 +4,15 @@ import ThemeDrop from "./components/ThemeDrop/ThemeDrop";
 import ThemeSelection from "./components/ThemeSelection/ThemeSelection";
 
 function App() {
-  //return (
-    //<BrowserRouter>
-    //<p>hello is the font working</p>
-    //<Routes>
-      //<Route>
-        
-     // </Route>
-    //</Routes>
-   // </BrowserRouter>
- // );
+  return (
+    <>
+      <p>hello is the font working</p>
+      return <ThemeSelection />
+    </>
+  );
 
   // return <ThemeDrop />;
-  return <ThemeSelection />
+  return <ThemeSelection />;
 }
 
 export default App;
