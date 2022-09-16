@@ -1,0 +1,44 @@
+@use '../../style/variables' as *;
+@use '../../style/typography' as *;
+
+.packageSelector{
+    // padding: 40px 130px;
+    font-family: $font-primary;
+    &__title{
+        font-family: $font-primary;
+        font-weight: 200;
+        font-size: 44px;
+        color: $telus-purple;
+        margin: 0 0 1rem 1rem;
+        padding: 40px 130px;
+    } 
+    &__div {
+        background-color: $telus-purple;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        padding: 20px 130px;
+        
+    }
+    &__nestedDiv{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    &__p{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    &__h2{
+        font-size: 36px;
+        margin-top: 1rem;
+        font-weight: 500;
+
+    }
+    &__h3{
+        font-weight: 300;
+        font-size: 36px;
+
+    }
+}
