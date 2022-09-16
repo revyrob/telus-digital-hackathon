@@ -7,16 +7,12 @@ import DummyHeader from "./components/DummyHeader/DummyHeader";
 import Header from "./components/Header/Header";
 
 function App() {
-
   return (
-
     <div className="App">
       <Header />
       <ThemeSelection />
     </div>
-
   );
-
 }
 
 export default App;

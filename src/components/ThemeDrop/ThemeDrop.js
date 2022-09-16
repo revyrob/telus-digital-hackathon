@@ -38,11 +38,11 @@ function ThemeSelection() {
       <h2 className="themeDrop__title">Explore Categories</h2>
       <div className="themeDrop__wrapper">
         <button className="themeDrop__btn" onClick={() => showInfo("movie")}>
-          Movies &amp Series
+          Movies & Series
         </button>
 
         <button className="themeDrop__btn" onClick={() => showInfo("sports")}>
-          Sports &amp Outdoors
+          Sports & Outdoors
         </button>
 
         <button
@@ -60,7 +60,7 @@ function ThemeSelection() {
           className="themeDrop__btn"
           onClick={() => showInfo("education")}
         >
-          Education &amp Documentary
+          Education & Documentary
         </button>
 
         <button className="themeDrop__btn" onClick={() => showInfo("news")}>
@@ -94,7 +94,7 @@ function ThemeSelection() {
         </button>
 
         <button className="themeDrop__btn" onClick={() => showInfo("variety")}>
-          Talk Show &amp Variety
+          Talk Show & Variety
         </button>
       </div>
       {activeTheme !== "education" ? (
