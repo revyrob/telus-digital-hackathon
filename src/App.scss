@@ -4,3 +4,21 @@
 body {
   font-family: $font-primary, sans-serif;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100px;
+  height: 125px;
+  &--img {
+      height: 20px;
+      width: 60px;
+  }
+  &__wrapper {
+    display: flex;
+    
+  }
+}
