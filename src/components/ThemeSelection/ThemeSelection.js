@@ -6,6 +6,9 @@ import popTheme from "../../assets/data/mostPopTheme.json";
 import popPrem from "../../assets/data/mostPopPremium.json";
 import premPack from "../../assets/data/premiumPacks.json";
 import indChan from "../../assets/data/individualChannels.json";
+import diveDeep from "../../assets/data/divingDeeper.json";
+import diveDeep2 from "../../assets/data/divingDeeper2.json";
+import diveDeep3 from "../../assets/data/divingDeeper3.json";
 import { useReducedMotion } from "framer-motion";
 import { v4 as uuidv4 } from "uuid";
 
@@ -15,6 +18,9 @@ function ThemeSelection() {
   const [popThemeCard] = useState(popTheme);
   const [popPremCard] = useState(popPrem);
   const [premPackCard] = useState(premPack);
+  const [diveDeepCard] = useState(diveDeep);
+  const [diveDeepCard2] = useState(diveDeep2);
+  const [diveDeepCard3] = useState(diveDeep3);
 
   function showInfo(category) {
     console.log(category);
@@ -140,11 +146,11 @@ function ThemeSelection() {
         </button>
       </div>
       <div className="underButtons">
-        {activeTheme !== "most-popular" ? (
+        {activeTheme === "most-popular" ? (
           <></>
         ) : (
           <div className="categories__cards">
-            {popThemeCard.map((item) => (
+            {diveDeepCard.map((item) => (
               <ThemeCard
                 key={uuidv4()}
                 header={item.title}
@@ -159,7 +165,7 @@ function ThemeSelection() {
           <></>
         ) : (
           <div className="categories__cards">
-            {popPremCard.map((item) => (
+            {diveDeepCard2.map((item) => (
               <ThemeCard
                 key={uuidv4()}
                 header={item.title}
@@ -174,7 +180,7 @@ function ThemeSelection() {
           <></>
         ) : (
           <div className="categories__cards">
-            {premPackCard.map((item) => (
+            {diveDeepCard3.map((item) => (
               <ThemeCard
                 key={uuidv4()}
                 header={item.title}
