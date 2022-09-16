@@ -1,5 +1,6 @@
-import TSN from "../../assets//showIcons/TSN1.png";
 import { useState } from "react";
+import MovieTheme from "../MovieTheme/MovieTheme";
+import SportsTheme from "../SportsTheme/SportsTheme";
 
 export default function ThemeDrop() {
   const [isShown, setIsShown] = useState(false);
@@ -11,19 +12,11 @@ export default function ThemeDrop() {
   return (
     <section className="categories">
       <button onClick={showInfo}>Movies Series</button>
-      <button>Sports Outdoors</button>
-      <button>Entertainment</button>
-      <button>Family Kids</button>
+      <button onClick={showInfo}>Sports Outdoors</button>
+      <button onClick={showInfo}>Entertainment</button>
+      <button onClick={showInfo}>Family Kids</button>
 
-      {isShown && <Box />}
+      {isShown && <SportsTheme />}
     </section>
-  );
-}
-
-function Box() {
-  return (
-    <div>
-      <img src={TSN} alt="tsn 1 logo" />
-    </div>
   );
 }
