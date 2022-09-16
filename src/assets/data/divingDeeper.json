@@ -1,0 +1,23 @@
+
+[
+    {
+        "title": "Prime Time",
+        "subtitle": "For original drama",
+        "image": "mostPopTheme/prime-time.png"
+    },
+    {
+        "title": "Living",
+        "subtitle": "For food and DYI lovers",
+        "image": "mostPopTheme/Living.png"
+    },
+    {
+        "title": "Sportsnet and Beyond",
+        "subtitle": "For sports fans",
+        "image": "mostPopTheme/sportnets-beyond.png"
+    },
+    {
+        "title": "Laughs and Cheers",
+        "subtitle": "For comedy fans",
+        "image": "mostPopTheme/laughs-cheers.png"
+    }
+]
