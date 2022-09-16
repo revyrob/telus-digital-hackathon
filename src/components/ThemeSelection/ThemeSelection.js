@@ -4,10 +4,12 @@ import ThemeCard from "../ThemeCard/ThemeCard";
 import "./ThemeSelection.scss";
 import primeTime from "../../assets/cardImages/primeTime.png";
 import { motion } from "framer-motion";
+import popThemes from "../../assets/data/themeCards.json";
 
 function ThemeSelection() {
   const [activeTheme, setActiveTheme] = useState(null);
   const [cart, setCart] = useState(0);
+  const [popCards] = useState(popThemes);
 
   function showInfo(category) {
     console.log(category);
@@ -29,10 +31,25 @@ function ThemeSelection() {
         <p className="categories__p">Most popular theme packs</p>
       </div>
       <div className="categories__cards">
-        <ThemeCard />
-        <ThemeCard />
-        <ThemeCard />
-        <ThemeCard />
+        <ThemeCard item={popCards} />
+        <ThemeCard
+          theme={"blah"}
+          header={"most-popular"}
+          description={"i am so popular"}
+          image={primeTime}
+        />
+        <ThemeCard
+          theme={"blah"}
+          header={"most-popular"}
+          description={"i am so popular"}
+          image={primeTime}
+        />
+        <ThemeCard
+          theme={"blah"}
+          header={"most-popular"}
+          description={"i am so popular"}
+          image={primeTime}
+        />
       </div>
       <p className="categories__p--purple">Or dive deeper</p>
       <button
