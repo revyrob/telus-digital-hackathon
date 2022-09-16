@@ -1,0 +1,20 @@
+@use '../../style/variables' as *;
+
+.categories {
+    padding: 40px 130px;
+
+    &__button {
+        border-radius: 48px;
+        padding: 8px 16px;
+        background-color: white;
+        color: #676E73;
+        border: 1px solid #B2B9BF;
+        margin: 0 1rem 12px 0;
+
+        &--active {
+            background-color: #4B286D;
+            color: white;
+            border: none;
+        }
+    }
+}
