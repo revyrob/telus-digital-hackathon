@@ -263,6 +263,7 @@ function ThemeSelection() {
           </h2>
           <p className="categories__p">Most popular premiums</p>
         </div>
+        <div className="theme-cards">
         {popPremCard.map((item) => (
           <ThemeCard
             key={uuidv4()}
@@ -272,12 +273,15 @@ function ThemeSelection() {
             onclickEvent={seletedBox}
           />
         ))}
+        </div>
+
       </section>
 
       <section className="premiumPacks">
         <div className="categories__header">
           <p className="categories__p">Premium Packs</p>
         </div>
+        <div className="theme-cards">
         {premPackCard.map((item) => (
           <ThemeCard
             key={uuidv4()}
@@ -287,12 +291,15 @@ function ThemeSelection() {
             onclickEvent={seletedBox}
           />
         ))}
+        </div>
+
       </section>
 
       <section className="indChan">
         <div className="categories__header">
           <p className="categories__p">Individual Channels</p>
         </div>
+        <div className="theme-cards">
         {indChan.map((item) => (
           <ThemeCard
             key={uuidv4()}
@@ -302,6 +309,7 @@ function ThemeSelection() {
             onclickEvent={seletedBox}
           />
         ))}
+        </div>
       </section>
 
       <section className="checkout">
