@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Netflix",
+        "subtitle": "Enjoy unlimited viewing - without every watching a single commercial",
+        "image": "individualChannels/netflix.png"
+    },
+    {
+        "title": "Odyessey Television",
+        "subtitle": "Keeps regional Greek communities in Canada informed and in touch",
+        "image": "individualChannels/ody.png"
+    },
+    {
+        "title": "WWE Network",
+        "subtitle": "Live Pay-per-view events including Royal Rumble, SummerSlam, Survivor Series and WrestleMania",
+        "image": "individualChannels/wwe.png"
+    },
+    {
+        "title": "The Filipino Channel",
+        "subtitle": "Brings overseas Filipinos close to home by offering shows reflective of Filipino culture and values",
+        "image": "individualChannels/tfc.png"
+    }
+]
