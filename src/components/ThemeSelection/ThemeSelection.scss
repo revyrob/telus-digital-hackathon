@@ -47,6 +47,14 @@
     }
 }
 
+
+
+.theme-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .numberCircled {
     background-color: $telus-purple;
     color: white;
