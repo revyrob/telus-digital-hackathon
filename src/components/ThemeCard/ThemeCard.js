@@ -1,11 +1,14 @@
-import { useState } from 'react';
-import './ThemeCard.scss';
-import selectOff from '../../assets/buttonIcons/selectOff.svg';
-import selectOn from '../../assets/buttonIcons/selectOn.svg'
+import { useState } from "react";
+import "./ThemeCard.scss";
+import selectOff from "../../assets/buttonIcons/selectOff.svg";
+import selectOn from "../../assets/buttonIcons/selectOn.svg";
 
-function ThemeCard( { header, description, image } ) {
+function ThemeCard({ item, header, description, image }) {
+  const [selected, setSelected] = useState(false);
 
-    const [selected, setSelected] = useState(false);
+  function onSelect() {
+    setSelected(!selected);
+  }
 
     function onSelect() {
         setSelected(!selected);
