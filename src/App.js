@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <PackageSelector />
-      <ThemeDrop />
+      <ThemeSelection />
     </div>
   );
 }
