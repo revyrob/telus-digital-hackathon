@@ -5,6 +5,10 @@ import "./ThemeSelection.scss";
 import primeTime from "../../assets/cardImages/primeTime.png";
 import { motion } from "framer-motion";
 import popThemes from "../../assets/data/mostPopTheme.json";
+import PremiumCard from "../PremiumCard/PremiumCard";
+import netflixImage from "../../assets/premiumPopularImages/netflix.png";
+import ChannelsCard from "../ChannelsCard/ChannelsCard";
+import netflixImage2 from "../../assets/PremiumChannelsImages/netflix.png";
 
 function ThemeSelection() {
   const [activeTheme, setActiveTheme] = useState(null);
@@ -140,13 +144,30 @@ function ThemeSelection() {
                     break;
             } */}
 
-      <ThemeCard
-        header={"Prime Time"}
-        description={
-          " Hit series to critically-acclaimed original movies and drama"
-        }
-        image={primeTime}
-      />
+      <>
+        <br></br>
+        <ThemeCard
+          header={"Prime Time"}
+          description={
+            " Hit series to critically-acclaimed original movies and drama"
+          }
+          image={primeTime}
+        />
+
+        <PremiumCard
+          header={"Netflix"}
+          description={"For the best in streaming"}
+          image={netflixImage}
+        />
+
+        <ChannelsCard
+          header={"Netflix"}
+          description={
+            "Enjoy unlimited viewing – without ever watching a single commercial"
+          }
+          image={netflixImage2}
+        />
+      </>
 
       {activeTheme !== "most-popular" ? (
         <></>
