@@ -7,12 +7,12 @@ function App() {
   return (
     <>
       <p>hello is the font working</p>
-      <ThemeDrop />
+      return <ThemeSelection />
     </>
   );
 
   // return <ThemeDrop />;
-  return <ThemeSelection />
+  return <ThemeSelection />;
 }
 
 export default App;
