@@ -5,6 +5,10 @@ import "./ThemeSelection.scss";
 import primeTime from "../../assets/cardImages/primeTime.png";
 import { motion } from "framer-motion";
 import popThemes from "../../assets/data/themeCards.json";
+import PremiumCard from "../PremiumCard/PremiumCard";
+import netflixImage from '../../assets/premiumPopularImages/netflix.png';
+import ChannelsCard from "../ChannelsCard/ChannelsCard";
+import netflixImage2 from '../../assets/PremiumChannelsImages/netflix.png';
 
 function ThemeSelection() {
     const [activeTheme, setActiveTheme] = useState(null);
@@ -51,70 +55,73 @@ function ThemeSelection() {
                     image={primeTime}
                 />
             </div>
-            <p className="categories__p--purple">Or dive deeper</p>
-            <button
-                onClick={() => showInfo("most-popular")}
-                className="categories__button categories__button--active"
-            >
-                Most Popular
-            </button>
-            <button onClick={() => showInfo("movies")} className="categories__button">
-                Movies & Series
-            </button>
-            <button onClick={() => showInfo("sports")} className="categories__button">
-                Sports & Outdoors
-            </button>
-            <button
-                onClick={() => showInfo("entertainment")}
-                className="categories__button"
-            >
-                Entertainment
-            </button>
-            <button onClick={() => showInfo("family")} className="categories__button">
-                Family & Kids
-            </button>
-            <button
-                onClick={() => showInfo("education")}
-                className="categories__button"
-            >
-                Education & Documentary
-            </button>
-            <button onClick={() => showInfo("news")} className="categories__button">
-                News
-            </button>
-            <button
-                onClick={() => showInfo("south-asian")}
-                className="categories__button"
-            >
-                South Asian
-            </button>
-            <button
-                onClick={() => showInfo("chinese")}
-                className="categories__button"
-            >
-                Chinese
-            </button>
-            <button onClick={() => showInfo("french")} className="categories__button">
-                French
-            </button>
-            <button
-                onClick={() => showInfo("filipino")}
-                className="categories__button"
-            >
-                Filipino
-            </button>
-            <button
-                onClick={() => showInfo("international")}
-                className="categories__button"
-            >
-                International
-            </button>
-            <button
-                onClick={() => showInfo("talk-show")}
-                className="categories__button"
-            >
-                Talk Show & Variety
-            </button>
+            <section className="dive-deeper-categories">
+                <p className="categories__p--purple">Or dive deeper</p>
+                <button
+                    onClick={() => showInfo("most-popular")}
+                    className="categories__button categories__button--active"
+                >
+                    Most Popular
+                </button>
+                <button onClick={() => showInfo("movies")} className="categories__button">
+                    Movies & Series
+                </button>
+                <button onClick={() => showInfo("sports")} className="categories__button">
+                    Sports & Outdoors
+                </button>
+                <button
+                    onClick={() => showInfo("entertainment")}
+                    className="categories__button"
+                >
+                    Entertainment
+                </button>
+                <button onClick={() => showInfo("family")} className="categories__button">
+                    Family & Kids
+                </button>
+                <button
+                    onClick={() => showInfo("education")}
+                    className="categories__button"
+                >
+                    Education & Documentary
+                </button>
+                <button onClick={() => showInfo("news")} className="categories__button">
+                    News
+                </button>
+                <button
+                    onClick={() => showInfo("south-asian")}
+                    className="categories__button"
+                >
+                    South Asian
+                </button>
+                <button
+                    onClick={() => showInfo("chinese")}
+                    className="categories__button"
+                >
+                    Chinese
+                </button>
+                <button onClick={() => showInfo("french")} className="categories__button">
+                    French
+                </button>
+                <button
+                    onClick={() => showInfo("filipino")}
+                    className="categories__button"
+                >
+                    Filipino
+                </button>
+                <button
+                    onClick={() => showInfo("international")}
+                    className="categories__button"
+                >
+                    International
+                </button>
+                <button
+                    onClick={() => showInfo("talk-show")}
+                    className="categories__button"
+                >
+                    Talk Show & Variety
+                </button>
+            </section>
+
 
             {/* switch (activeTheme) {
                 case "most-popular":
@@ -134,11 +141,27 @@ function ThemeSelection() {
                     break;
             } */}
 
-            <ThemeCard
-                header={'Prime Time'}
-                description={' Hit series to critically-acclaimed original movies and drama'}
-                image={primeTime}
-            />
+            <>
+                <br></br>
+                <ThemeCard
+                    header={'Prime Time'}
+                    description={' Hit series to critically-acclaimed original movies and drama'}
+                    image={primeTime}
+                />
+
+                <PremiumCard
+                    header={'Netflix'}
+                    description={'For the best in streaming'}
+                    image={netflixImage}
+                />
+
+                <ChannelsCard
+                    header={'Netflix'}
+                    description={'Enjoy unlimited viewing – without ever watching a single commercial'}
+                    image={netflixImage2}
+                />
+            </>
+
 
             {(activeTheme !== 'most-popular') ? <></> :
                 <>
@@ -177,7 +200,7 @@ function ThemeSelection() {
             }
         </section>
     )
-    
+
 }
 
 export default ThemeSelection;
