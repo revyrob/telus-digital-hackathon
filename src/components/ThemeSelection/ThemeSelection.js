@@ -1,13 +1,20 @@
 import { useState } from "react";
 import { act } from "react-dom/test-utils";
 import "./ThemeSelection.scss";
+import { motion } from "framer-motion";
 
 function ThemeSelection() {
   const [activeTheme, setActiveTheme] = useState(null);
+  const [cart, setCart] = useState(0);
 
   function showInfo(category) {
     console.log(category);
     setActiveTheme(category);
+  }
+
+  function seletedBox(theme) {
+    console.log(theme);
+    setCart(theme);
   }
 
 
@@ -64,6 +71,7 @@ function ThemeSelection() {
             }
         </section>
     )
+
 }
 
 export default ThemeSelection;

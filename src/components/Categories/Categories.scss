@@ -1,0 +1,11 @@
+.categories {
+    width: 80%;
+    &__btn {
+        width: 150px;
+        height: 75px;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
