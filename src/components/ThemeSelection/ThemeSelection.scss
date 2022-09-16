@@ -10,10 +10,11 @@
         background-color: white;
         color: #676E73;
         border: 1px solid #B2B9BF;
-        margin: 0 1rem 12px 0;
+        margin: 0 16px 12px 0;
 
         &:hover {
-            border: 3px solid #B2B9BF;
+            // border: 3px solid rgb(178, 185, 191);
+            box-shadow: 0px 2px 4px rgba(178, 185, 191, 0.8);
         }
 
         &--active {
@@ -58,4 +59,13 @@
     margin-left: .5rem;
     font-weight: 700;
     color: $telus-purple;
+}
+
+.dive-deeper-categories {
+
+    &__button-area{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
