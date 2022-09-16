@@ -1,10 +1,11 @@
 import { useState } from "react";
-import MovieTheme from "../MovieTheme/MovieTheme";
-import SportsTheme from "../SportsTheme/SportsTheme";
+
 import { motion } from "framer-motion";
 import TSN1 from "../../assets//showIcons/TSN1.png";
 import TSN2 from "../../assets//showIcons/TSN2.png";
 import TSN3 from "../../assets//showIcons/TSN3.png";
+import Modal from "react-modal";
+
 import "./ThemeDrop.scss";
 
 function ThemeSelection() {
@@ -12,6 +13,40 @@ function ThemeSelection() {
   const [cart, setCart] = useState(0);
   const [theme1, setThemes1] = useState(null);
   const [theme, setThemes] = useState(null);
+
+  /*
+   *Modal code
+   */
+  const [deleteModal, setDeleteModal] = useState(false);
+
+  function openModal() {
+    setDeleteModal(true);
+  }
+
+  function closeModal() {
+    setDeleteModal(false);
+  }
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
+  //need this to do the overlay for the modal
+  const bg = {
+    overlay: {
+      background: "rgba(19, 24, 44, .6)",
+    },
+    content: {
+      width: "42rem",
+      height: "16.375rem",
+      margin: "5.3125rem auto 0",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+      boxShadow: "0px 2px 5px rgba(19, 24, 44, 0.1)",
+      borderRadius: "3px",
+    },
+  };
 
   function showInfo(category) {
     console.log(category);
@@ -24,7 +59,7 @@ function ThemeSelection() {
     setCart(cart + 1);
     console.log(cart);
     if (cart > 3) {
-      alert("you have reached the total themes");
+      <Modal />;
     }
   }
 
