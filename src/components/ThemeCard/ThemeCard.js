@@ -2,7 +2,6 @@ import { useState } from "react";
 import "./ThemeCard.scss";
 import selectOff from "../../assets/buttonIcons/selectOff.svg";
 import selectOn from "../../assets/buttonIcons/selectOn.svg";
-import { motion } from "framer-motion";
 
 function ThemeCard({ header, description, image }) {
   const [selected, setSelected] = useState(false);
