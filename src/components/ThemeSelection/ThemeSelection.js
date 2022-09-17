@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import ThemeCard from "../ThemeCard/ThemeCard";
+import PremiumCard from "../PremiumCard/PremiumCard";
+import DropCard from "../DropCard/DropCard";
 import "./ThemeSelection.scss";
-import { motion } from "framer-motion";
 
-import primeTime from "../../assets/cardImages/primeTime.png";
 import popTheme from "../../assets/data/mostPopTheme.json";
 import popPrem from "../../assets/data/mostPopPremium.json";
 import premPack from "../../assets/data/premiumPacks.json";
@@ -11,15 +11,11 @@ import indChan from "../../assets/data/individualChannels.json";
 import diveDeep from "../../assets/data/divingDeeper.json";
 import diveDeep2 from "../../assets/data/divingDeeper2.json";
 import diveDeep3 from "../../assets/data/divingDeeper3.json";
-import { useReducedMotion } from "framer-motion";
-import { v4 as uuidv4 } from "uuid";
-import popThemes from "../../assets/data/mostPopTheme.json";
-import PremiumCard from "../PremiumCard/PremiumCard";
-import netflixImage from "../../assets/premiumPopularImages/netflix.png";
-import ChannelsCard from "../ChannelsCard/ChannelsCard";
-import netflixImage2 from "../../assets/PremiumChannelsImages/netflix.png";
+
 import checkmarks from "../../assets/summary-check.svg";
 import hippo from "../../assets/hippo.png";
+
+import { v4 as uuidv4 } from "uuid";
 
 function ThemeSelection() {
   const [activeTheme, setActiveTheme] = useState(null);
@@ -80,7 +76,7 @@ function ThemeSelection() {
       </div>
       <div className="categories__cards">
         {popThemeCard.map((item) => (
-          <ThemeCard
+          <PremiumCard
             key={uuidv4()}
             header={item.title}
             description={item.subtitle}
@@ -191,9 +187,9 @@ function ThemeSelection() {
 
       <div className="underButtons">
         {activeTheme === "most-popular" && (
-          <div className="categories__cards">
+          <div className="categories__cardspop">
             {diveDeepCard.map((item) => (
-              <ThemeCard
+              <DropCard
                 key={uuidv4()}
                 header={item.title}
                 description={item.subtitle}
@@ -204,9 +200,9 @@ function ThemeSelection() {
           </div>
         )}
         {activeTheme === "movies" && (
-          <div className="categories__cards">
+          <div className="categories__cardspop">
             {diveDeepCard2.map((item) => (
-              <ThemeCard
+              <DropCard
                 key={uuidv4()}
                 header={item.title}
                 description={item.subtitle}
@@ -217,9 +213,9 @@ function ThemeSelection() {
           </div>
         )}
         {activeTheme === "sports" && (
-          <div className="categories__cards">
+          <div className="categories__cardspop">
             {diveDeepCard3.map((item) => (
-              <ThemeCard
+              <DropCard
                 key={uuidv4()}
                 header={item.title}
                 description={item.subtitle}
@@ -230,9 +226,9 @@ function ThemeSelection() {
           </div>
         )}
         {activeTheme === "entertainment" && (
-          <div className="categories__cards">
+          <div className="categories__cardspop">
             {popThemeCard.map((item) => (
-              <ThemeCard
+              <DropCard
                 key={uuidv4()}
                 header={item.title}
                 description={item.subtitle}
@@ -243,9 +239,9 @@ function ThemeSelection() {
           </div>
         )}
         {activeTheme === "family" && (
-          <div className="categories__cards">
+          <div className="categories__cardspop">
             {popThemeCard.map((item) => (
-              <ThemeCard
+              <DropCard
                 key={uuidv4()}
                 header={item.title}
                 description={item.subtitle}

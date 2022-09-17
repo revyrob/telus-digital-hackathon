@@ -11,8 +11,8 @@ function App() {
       <Header />
       <PackageSelector />
       <ThemeSelection />
-      {/* <Popup />
-      <ThemeDrop /> */}
+      {/* <Popup /> */}
+      {/* <ThemeDrop /> */}
     </div>
   );
 }
