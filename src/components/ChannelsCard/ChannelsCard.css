@@ -1,0 +1,47 @@
+.channels-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #2c2e30;
+}
+.channels-card-wrapper {
+  width: 268px;
+  height: 364px;
+  padding: 42.5px 22px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: inline-block;
+}
+.channels-card-wrapper:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+.channels-card-wrapper--selected {
+  border: 2px solid #163E06;
+}
+.channels-card-wrapper:hover {
+  cursor: pointer;
+}
+.channels-card__header {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  line-height: 1;
+  align-self: flex-start;
+}
+.channels-card__description {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.43;
+  align-self: flex-start;
+}
+.channels-card__image {
+  margin: 0 0 8px 0;
+  max-width: 224px;
+}
+.channels-card__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 30px;
+}/*# sourceMappingURL=ChannelsCard.css.map */
