@@ -20,11 +20,7 @@ function PremiumCard({ header, description, image }) {
       <div className={`premium-card premium-card--${header}`}>
         <h2 className="premium-card__header">{header}</h2>
         <p className="premium-card__description">{description}</p>
-        <img
-          className="premium-card__image"
-          src={image}
-          alt="premium stream image"
-        />
+        <img className="premium-card__image" src={image} alt="premium stream" />
         <button className="premium-card__button">
           {selected === false ? (
             <img src={selectOff} alt="stream button off" />

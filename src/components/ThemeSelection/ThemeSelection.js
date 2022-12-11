@@ -354,11 +354,7 @@ function ThemeSelection() {
               </div>
             </div>
             <div className="checkout__image">
-              <img
-                className="checkout__image-img"
-                src={hippo}
-                alt="hippo image"
-              />
+              <img className="checkout__image-img" src={hippo} alt="hippo" />
             </div>
           </div>
         </div>

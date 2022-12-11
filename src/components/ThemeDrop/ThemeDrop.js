@@ -9,7 +9,7 @@ import "./ThemeDrop.scss";
 function ThemeSelection() {
   const [activeTheme, setActiveTheme] = useState(null);
   const [cart, setCart] = useState(0);
-  const [_theme, setThemes] = useState(null);
+  const [setThemes] = useState(null);
 
   function showInfo(category) {
     console.log(category);
