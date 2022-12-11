@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ThemeCard from "../ThemeCard/ThemeCard";
 import PremiumCard from "../PremiumCard/PremiumCard";
 import DropCard from "../DropCard/DropCard";
@@ -38,32 +38,12 @@ function ThemeSelection() {
   }
 
   function seletedBox(theme) {
-    // setThemes(theme);
     //change classname to show selected item
     setCart(cart + 1);
-    // console.log(cart);
     if (cart > 3) {
       alert("Upgrade so you can choose all the channels you want.");
     }
   }
-
-  // useEffect(() => {
-  //   console.log(activeTheme);
-  // }, [activeTheme]);
-
-  function seletedBox(theme) {
-    setCart(theme);
-  }
-  // function seletedBox(theme) {
-  //   console.log(theme);
-  //   setCart(cart + 1);
-  //   console.log(cart);
-  //   if (cart > 4) {
-  //     alert("Upgrade so you can choose all the channels you want.");
-  //   }
-  //   console.log(cart);
-  //   console.log(theme);
-  // }
 
   return (
     <section className="categories">
