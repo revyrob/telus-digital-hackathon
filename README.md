@@ -1,8 +1,8 @@
 # Hackathon - Telus Digital Partner 
 Winner of 24hr Digital Telus Hackathon submission.   Streamlining the user interface for Telus Digital Streaming packages.  Worked with a team of 5: 3 UX/UI designers and another Web Developer.
 
-##🚀 Demo
-
+## 🚀 Demo
+https://hackathon-telus-digital.netlify.app/
 
 ## 🛠️ Installation Steps:
 1. To start using this app you first need to clone the repository:
