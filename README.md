@@ -7,9 +7,9 @@ https://hackathon-telus-digital.netlify.app/
 ## 🛠️ Installation Steps:
 1. To start using this app you first need to clone the repository:
 
-git clone https://github.com/revyrob/telus-digital-hackathon
+git clone git@github.com:revyrob/telus-digital-hackathon.git
 
-2. Then you will need to install all the required packages for the app and server. After you in the correct folder (app or server) run this command (if you're using npm):
+2. Then you will need to install all the required packages for the application. Run this command (if you're using npm):
 
 npm i
 
